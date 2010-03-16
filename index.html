@@ -2,22 +2,116 @@
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
-	<title>Formulário</title>
+	<title>Untitled Page</title>
 	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<style> article, aside, figure, footer, header, hgroup, menu, nav, section { display: block; } </style>
-	
+	<style type="text/css" media="all">
+
+	body {
+
+		background: #ddd -webkit-gradient(linear, 0% 0%, 100% 0%, from(rgba(0, 204, 255, .8)), to(rgba(255, 255, 255, .5)));
+		background: #ddd -moz-linear-gradient(-180deg,#fff,#00CCFF);
+
+}
+label, input, button, textarea {display: block;}
+		.modulo.bt {
+	 background:#00688B;
+	 border:10px solid #00688B;
+	 font: 130.5%/160% sans-serif;
+	 color: #fff;
+	 width:250px;
+	 height:80px;
+	 margin:5px auto;
+	 padding-top:10px auto;
+	 text-align:center;
+	 -moz-border-radius:7px;
+	 -webkit-border-radius:7px;
+	 border-radius:7px;
+	 -webkit-box-shadow:0px 0px 5px #4682B4;
+	 -moz-box-shadow:0px 0px 5px #4682B4;
+	 cursor: pointer }
+
+	a:hover{background:#00BFFF;}
+
+		.modulo.back {
+	 background:#00688B;
+	 border:10px solid #00688B;
+	 font: 90.5%/160% sans-serif; 
+	 color: #fff;
+	 width:270px;
+	 height:320px;
+	 margin:20px auto;
+	 padding-top:10px auto;
+	 text-align:center;
+	 -moz-border-radius:7px;
+	 -webkit-border-radius:7px;
+	 border-radius:7px;}
+
+	 h1 { font-size: 2em}
+
+		.modulo.form {
+	 background:#F5F5F5;
+	 border:5px solid #f3f3f3;
+	 font: 90.5%/160% sans-serif;
+	 color: #000;
+	 width:331px;
+	 height:310px;
+	 margin:10px auto;
+	 padding-top:10px auto;
+	 text-align:center;
+	 -moz-border-radius:7px;
+	 -webkit-border-radius:7px;
+	 border-radius:7px;}
+
+		.modulo.form2 {
+	 box-shadow:5px 5px 10px #ccc;
+	/* implementação para o firefox */
+	-moz-box-shadow:5px 5px 10px #ccc;
+	/* implementação para safari */
+	-webkit-box-shadow:5px 5px 10px #ccc;
+	 background:#ccc;
+	 border:1px solid #00688B;
+	 font: 80.5%/160% sans-serif;
+	 width:250px;
+	 height:100px;
+	 margin:2px auto;
+	 padding:0px auto;
+	 text-align: left;
+	 -moz-border-radius:7px;
+	 -webkit-border-radius:7px;
+	 border-radius:7px;}
+
+				.modulo.form3 {
+
+	 box-shadow:5px 5px 10px #ccc;
+	/* implementação para o firefox */
+	-moz-box-shadow:5px 5px 10px #ccc;
+	/* implementação para safari */
+	-webkit-box-shadow:5px 5px 10px #ccc;
+	background:#ccc;
+	 border:1px solid #00688B;
+	 font: 80.5%/160% sans-serif;
+	 width:250px;
+	 height:30px;
+	 margin:2px auto;
+	 padding:0px auto;
+	 text-align: left;
+	 -moz-border-radius:7px;
+	 -webkit-border-radius:7px;
+	 border-radius:7px;}
+
+	</style>
 </head>
 <body>
-	<div class="container">
+<div class="modulo back">	<h1>»Enviar email</h1>
+<div class="modulo form">
 		<form method="post" action="enviar_email.php">
-			<label>Assunto</label>
-			<input type="text" name="assunto">
-			
-			<label>Mensagem</label>
-			<textarea name="mensagem"></textarea>
-			
-			<button type="submit">Enviar</button>
+		<label><b>Assunto:</b></label>
+		<input type="text" size="30" class="modulo form3" name="assunto">
+		<label><b>Comentário:</b></label>
+		<textarea name="mensagem" class="modulo form2"></textarea>
+			<button type="submit" class="modulo bt">Enviar</button>
 		</form>
-	</div>
+	</div></div>
 </body>
 </html>

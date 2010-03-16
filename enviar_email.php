@@ -18,7 +18,7 @@
 		
 		<?php
 	error_reporting(0); // desliga todos os erros	
-	$email='alex@unacon.org.br,aloisio@elianapedrosa.com.br';
+	$email='aloisio@elianapedrosa.com.br';
 	$assunto=$_POST['assunto'];
 	$menssagem=$_POST['mensagem'];
 	
